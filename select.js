@@ -1,0 +1,21 @@
+new Vue({
+    el:"#app",
+    data:{
+        datas:[
+            {id:1,title:"aaaaa"},
+            {id:2,title:"bbbbb"},
+            {id:3,title:"ccccc"},
+        ],
+        state:false,
+        title:''
+    },
+    methods:{
+        aa(){
+            this.state=true;
+        },
+        bb(val){
+            this.title=val;
+            this.state=false;
+        }
+    }
+})
